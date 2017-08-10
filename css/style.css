@@ -5,7 +5,7 @@ body {
     -o-background-size: cover;
     background-size: cover;
     font-family: "Mercury Text G1 A", "Mercury Text G1 B", "Georgia", "Times New Roman", "Times", sans-serif;
-    height: 3300px;
+    height: 3200px;
 }
 
 
@@ -29,8 +29,17 @@ body {
     background-size: 100% 100%;
 }
 
+#title {
+    font-size: 80px;
+    color: red;
+    font-family: Georgia;
+    text-align: center;
+    font-weight: bolder;
+    padding-top: 20px;
+}
+
 .horizontal_dotted_line{
-    border-bottom: 5px dashed red;
+    border-bottom: 10px dashed red;
     width: 100%;
     position: fixed;
     bottom: 200px;
@@ -39,13 +48,13 @@ body {
 #pixel-counter {
     font-family: Georgia;
     font-size: 80px;
-    color: #a0b8ff;
+    /*color: #a0b8ff;*/
+    color: red;
     position: fixed;
     bottom: 0px;
     padding-right: 5px;
     padding-bottom: 0px;
     padding-top: 90px;
-    text-align: right;
     /*right: 20px;*/
     height: 200px;
     width: 100%;
@@ -55,4 +64,12 @@ body {
     background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 20%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
 
+}
+
+#counterleft {
+    float: left;
+}
+
+#counterright {
+    float: right;
 }

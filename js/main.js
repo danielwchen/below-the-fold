@@ -16,16 +16,31 @@ function checkBotPos() {
 
 }
 
-function updatePixelCount() {
-    document.getElementById('pixel-counter').innerHTML = checkBotPos().toString() + " px";
-}
+var data;
 
-updatePixelCount();
+d3.csv("data/scroll_interp.csv", function(d){
+    data = d;
 
-$( window ).resize(function() {
+    function updatePixelCount() {
+        var pos = checkBotPos();
+        document.getElementById('counterright').innerHTML = pos.toString() + " px";
+        if (pos > 3000) {
+            document.getElementById('counterleft').innerHTML = data[3000].percent.toString() + " % readers";
+        } else if (pos < 0) {
+            document.getElementById('counterleft').innerHTML = data[0].percent.toString() + " % readers";
+        } else {
+            document.getElementById('counterleft').innerHTML = data[pos].percent.toString() + " % readers";
+        }
+    }
+
     updatePixelCount();
-});
-$( window ).scroll(function() {
-    updatePixelCount();
-});
 
+    $( window ).resize(function() {
+        updatePixelCount();
+    });
+    $( window ).scroll(function() {
+        updatePixelCount();
+    });
+
+    console.log(data);
+});
