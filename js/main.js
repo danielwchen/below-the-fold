@@ -12,15 +12,15 @@ function checkBotPos() {
     x = w.innerWidth || e.clientWidth || g.clientWidth;
     y = w.innerHeight|| e.clientHeight|| g.clientHeight;
     ypos = w.scrollY;
-    return ypos + y;
+    return ypos + y - 200;
 
 }
 
 function updatePixelCount() {
-    document.getElementById('pixel-counter').innerHTML = checkBotPos().toString();
+    document.getElementById('pixel-counter').innerHTML = checkBotPos().toString() + " px";
 }
 
-updatePixelCount()
+updatePixelCount();
 
 $( window ).resize(function() {
     updatePixelCount();
@@ -28,3 +28,4 @@ $( window ).resize(function() {
 $( window ).scroll(function() {
     updatePixelCount();
 });
+
