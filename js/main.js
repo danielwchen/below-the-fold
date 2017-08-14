@@ -59,7 +59,6 @@ function initVis(error, d){
     svg = d3.select("#people-vis").append("svg")
         .attr("width", x)
         .attr("height", 200)
-        .attr("transform", "translate(0," + 70 + ")")
     ;
 
     updateVis();
@@ -100,6 +99,7 @@ function updateVis() {
     bg_image
         .attr("width", 40)
         .attr("height", 105.507)
+        .attr("y", 70)
         .attr("transform", function(d, i) {
             return "translate(" + ((x / (numPeople + 6)) * (i + 3) - 20) + "," + "0" + ")";
         })
@@ -118,6 +118,7 @@ function updateVis() {
     image.enter()
         .append("image")
         .attr("class", "image")
+        .attr("y", 70)
         .attr("width", 40)
         .attr("height", 105.507)
         .attr("xlink:href", "img/pinkperson.svg")
