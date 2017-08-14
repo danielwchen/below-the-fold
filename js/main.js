@@ -44,13 +44,6 @@ var numPeople; // may scale based on window size
 var people = [];
 var svg;
 
-// for (var i = 0; i < numPeople; i++) {
-//     var person = {
-//         active: true
-//     };
-//     people.push(person);
-// }
-
 
 queue()
     .defer(d3.csv,"data/scroll_interp.csv")
