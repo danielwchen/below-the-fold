@@ -99,6 +99,7 @@ function updateVis() {
     // update
     bg_image
         .attr("width", 40)
+        .attr("height", 105.507)
         .attr("transform", function(d, i) {
             return "translate(" + ((x / (numPeople + 6)) * (i + 3) - 20) + "," + "0" + ")";
         })
