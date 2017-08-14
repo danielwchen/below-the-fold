@@ -74,7 +74,7 @@ function updateVis() {
 
     if (x > 1000) {
         numPeople = 20;
-    } else if (x > 700) {
+    } else if (x > 800) {
         numPeople = 16;
     } else if (x > 500) {
         numPeople = 10;
@@ -105,7 +105,7 @@ function updateVis() {
         .attr("height", 105.507)
         .attr("y", 70)
         .attr("transform", function(d, i) {
-            return "translate(" + ((x / (numPeople + 6)) * (i + 3) - 20) + "," + "0" + ")";
+            return "translate(" + ((x / (numPeople + 1)) * (i + 1) - 20) + "," + "0" + ")";
         })
         .attr("xlink:href", "img/grayperson.svg")
         ;
@@ -131,7 +131,7 @@ function updateVis() {
     // update
     image
         .attr("transform", function(d, i) {
-            return "translate(" + ((x / (numPeople + 6)) * (i + 3) - 20) + "," + "0" + ")";
+            return "translate(" + ((x / (numPeople + 1)) * (i + 1) - 20) + "," + "0" + ")";
         })
         .transition(100)
         .attr("opacity", function(d,i) {

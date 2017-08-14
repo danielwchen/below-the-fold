@@ -5,7 +5,7 @@ body {
     -o-background-size: cover;
     background-size: cover;
     font-family: "Mercury Text G1 A", "Mercury Text G1 B", "Georgia", "Times New Roman", "Times", sans-serif;
-    height: 3200px;
+    height: 3300px;
 }
 
 
@@ -17,6 +17,7 @@ body {
     font-size: 16px;
     font-weight: normal;
     font-style: normal;
+    font-family: 'Roboto', sans-serif;
 }
 
 #wrapper {
@@ -79,10 +80,10 @@ body {
     color: red;
 }
 
-/*#counterleft {*/
-    /*float: left;*/
-/*}*/
+img {
+    display: block;
+    margin: 0 auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
 
-/*#counterright {*/
-    /*float: right;*/
-/*}*/
+}
