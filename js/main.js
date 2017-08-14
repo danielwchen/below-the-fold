@@ -72,10 +72,14 @@ function updateVis() {
 
     var people = [];
 
-    if (x > 800) {
+    if (x > 1000) {
         numPeople = 20;
-    } else {
+    } else if (x > 700) {
+        numPeople = 16;
+    } else if (x > 500) {
         numPeople = 10;
+    } else {
+        numPeople = 6;
     }
 
     for (var i = 0; i < numPeople; i++) {
