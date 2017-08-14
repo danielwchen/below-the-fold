@@ -119,6 +119,7 @@ function updateVis() {
         .append("image")
         .attr("class", "image")
         .attr("width", 40)
+        .attr("height", 105.507)
         .attr("xlink:href", "img/pinkperson.svg")
     ;
 
