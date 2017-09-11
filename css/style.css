@@ -5,7 +5,7 @@ body {
     -o-background-size: cover;
     background-size: cover;
     font-family: "Mercury Text G1 A", "Mercury Text G1 B", "Georgia", "Times New Roman", "Times", sans-serif;
-    height: 3300px;
+    min-height: 3260px;
 }
 
 
@@ -29,6 +29,10 @@ body {
     background-attachment: scroll;
     background-position: left top;
     background-size: 100% 100%;
+}
+
+#spacer {
+    height: 260px;
 }
 
 #title {
