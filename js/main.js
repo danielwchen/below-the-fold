@@ -17,7 +17,7 @@ function checkWinStat() {
 
 function checkBotPos() {
     checkWinStat();
-    return ypos + y - 300;
+    return ypos + y - 260;
 }
 
 function updatePixelCount() {
