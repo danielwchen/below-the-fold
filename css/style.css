@@ -10,11 +10,11 @@ body {
 
 
 #body-text {
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
     padding-bottom: 0%;
     padding-top: 0%;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: normal;
     font-style: normal;
     font-family: 'Roboto', sans-serif;
@@ -31,6 +31,8 @@ body {
 }
 
 #title {
+    padding-left: 10%;
+    padding-right: 10%;
     font-size: 80px;
     color: red;
     font-family: Georgia;
@@ -40,7 +42,7 @@ body {
 }
 
 .horizontal_dotted_line{
-    border-bottom: 10px dashed red;
+    border-bottom: 8px dashed red;
     width: 100%;
     position: fixed;
     bottom: 300px;
@@ -85,5 +87,6 @@ img {
     margin: 0 auto;
     padding-top: 5px;
     padding-bottom: 5px;
+    /*width: 80%;*/
 
 }
