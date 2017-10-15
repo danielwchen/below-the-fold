@@ -133,7 +133,7 @@ function updateVis() {
         .attr("transform", function(d, i) {
             return "translate(" + ((x / (numPeople + 1)) * (i + 1) - 20) + "," + "0" + ")";
         })
-        .transition(100)
+        .transition(50)
         .attr("opacity", function(d,i) {
             if (pos > 3000) {
                 return 0;
